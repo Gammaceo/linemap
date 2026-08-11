@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>聯和通信SmartPhoneShop交通路線圖</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--mstheme--><link rel="stylesheet" href="file:///C:/Users/淚的小花/AppData/Local/Microsoft/Windows/INetCache/FrontPageTempDir/mstheme/global/glob1011-109.css">
+<meta name="Microsoft Theme" content="global 1011">
+<style>
+  /* 全域基本設定 */
+  body {
+    background-image: url('glotextb.gif'); /* 修正路徑，確保與 html 放同資料夾時讀得到 */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    font-family: "Microsoft JhengHei", "Arial Unicode MS", sans-serif;
+    margin: 0;
+    padding: 15px;
+    color: #333333;
+    line-height: 1.6;
+  }
+
+  /* 網頁主要的卡片容器 */
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.94);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  }
+
+  /* 網頁大標題 */
+  h1 {
+    font-size: 22px;
+    color: #1a1a1a;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border-bottom: 3px double #0000FF;
+    padding-bottom: 12px;
+  }
+
+  /* 捷運/開車 區塊大標題 */
+  .section-title {
+    font-size: 20px;
+    color: #0000FF;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-title span {
+    margin: 0 8px;
+  }
+
+  /* 圖片 RWD 自動縮放：極重要，防止圖片超出手機螢幕 */
+  .route-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+  }
+
+  /* 小圖示對齊設定 */
+  .icon-work {
+    vertical-align: middle;
+    margin-right: 6px;
+    width: 18px;
+    height: auto;
+  }
+
+  /* 導航按鈕基本樣式 */
+  .btn {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background 0.2s;
+  }
+
+  /* 步行導航大按鈕：加大面積讓手指在手機上超級好點擊 */
+  .btn-walk-main {
+    font-size: 16px;
+    color: #FF0000;
+    background-color: rgba(255, 0, 0, 0.08);
+    border: 1px solid #FF0000;
+  }
+  .btn-walk-main:hover {
+    background-color: rgba(255, 0, 0, 0.15);
+  }
+
+  /* 停車場區塊容器 */
+  .parking-group {
+    background-color: #f8f9fa;
+    border-left: 4px solid #0000FF;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .parking-item {
+    margin: 12px 0;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #dddddd;
+  }
+  .parking-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  /* 停車場名稱連結 */
+  .parking-name {
+    font-size: 16px;
+    color: #0000FF;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+
+  /* 停車後步行連結 */
+  .btn-walk-sub {
+    font-size: 14px;
+    color: #FF0000;
+    background-color: rgba(255, 0, 0, 0.05);
+  }
+  .btn-walk-sub:hover {
+    background-color: rgba(255, 0, 0, 0.12);
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  
+  <!-- 網頁大標題 -->
+  <h1>聯和通信 SmartPhoneShop<br>交通路線圖</h1>
+
+  <!-- 捷運區塊 -->
+  <div class="section-title">
+    <span>⋘</span>捷運<span>⋙</span>
+  </div>
+  
+  <!-- 捷運路線圖（圖片已設定手機自動縮放） -->
+  <img class="route-img" border="0" src="lm01.png" width="823" height="527" alt="捷運交通路線圖">
+  
+  <!-- 步行導航 -->
+  <p>
+    <img class="icon-work" src="work.png" width="22" height="31" alt="圖示">
+    <a class="btn btn-walk-main" href="https://maps.app.goo.gl/GCLS254E7UArz3Tp9">Google Map 步行導航</a>
+  </p>
+
+  <!-- 開車區塊 -->
+  <div class="section-title">
+    <span>⋘</span>開車<span>⋙</span>
+  </div>
+  
+  <!-- 開車路線圖（圖片已設定手機自動縮放） -->
+  <img class="route-img" border="0" src="lm02.png" width="818" height="566" alt="開車交通路線圖">
+
+  <!-- 停車場清單區塊 -->
+  <div class="parking-group">
+    
+    <!-- 停車場 1 -->
+    <div class="parking-item">
+      <a class="parking-name" href="https://maps.app.goo.gl/3NuMSUdE5zdnMNnn6">1. 金鑽廣場大樓停車場</a>
+      <div>
+        <img class="icon-work" src="work.png" width="22" height="31" alt="圖示">
+        <a class="btn btn-walk-sub" href="https://maps.app.goo.gl/PQJv3nbUgbTGB65B9">停車後步行路線</a>
+      </div>
+    </div>
+
+    <!-- 停車場 2 -->
+    <div class="parking-item">
+      <a class="parking-name" href="https://maps.app.goo.gl/ekHv3RLxAneX7TXj6">2. Times 南雅夜市第二停車場</a>
+      <div>
+        <img class="icon-work" src="work.png" width="22" height="31" alt="圖示">
+        <a class="btn btn-walk-sub" href="https://maps.app.goo.gl/K2NcwEishP4qq8eY6">停車後步行路線</a>
+      </div>
+    </div>
+
+    <!-- 停車場 3 -->
+    <div class="parking-item">
+      <a class="parking-name" href="https://maps.app.goo.gl/VEZP5b8w8gq8yNCc9">3. Times 南雅夜市停車場</a>
+      <div>
+        <img class="icon-work" src="work.png" width="22" height="31" alt="圖示">
+        <a class="btn btn-walk-sub" href="https://maps.app.goo.gl/E4bz8vUFiRoj5bGp7">停車後步行路線</a>
+      </div>
+    </div>
+
+    <!-- 停車場 4 -->
+    <div class="parking-item">
+      <a class="parking-name" href="https://maps.app.goo.gl/8PfBuHKGhc6JKAkn8">4. 南雅夜市停車場</a>
+      <div>
+        <img class="icon-work" src="work.png" width="22" height="31" alt="圖示">
+        <a class="btn btn-walk-sub" href="https://maps.app.goo.gl/nXu9c5PdE55iQUW47">停車後步行路線</a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
